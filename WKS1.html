@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wicket-Keepers| Disney+ Hotstar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fondamento&family=Send+Flowers&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <style>
+        #loginbtn{
+          margin-left: 4px;
+        }
+
+        button a{
+          
+          text-decoration: none;
+          color: rgb(88, 87, 84);
+        }
+
+        button a:hover{
+          color: white;
+        }
+
+        #subscribe{
+          margin-left: 4px;
+        }
+
+        .container{
+          /* background-color: rgb(14, 14, 97); */
+        }
+
+        .container-outer{
+          background-color: rgb(23, 23, 111);
+        }
+
+        #row1{
+          margin-left:10px;
+          margin-top: 27px;
+        }
+
+        #innerrow1{
+          display: none;
+          margin-left:-2px;
+          margin-top: 27px;
+        }
+
+        #volhigh{
+          text-align: center;
+        }
+
+        h3{
+          font-family: cursive;
+          color: white;
+        }
+        .browse{
+          display: flex;
+          justify-content: center;
+          margin: 20px;
+        }
+
+        #browse{
+          background-color: rgb(255, 0, 157);
+          font-size: 45px;
+          font-family: cursive;
+          font-weight: 100px;
+          border-radius: 10px;
+        }
+
+        #pagenav{
+            display: flex;
+            justify-content: center;
+            margin: 15px;
+        }
+
+        body{
+        background-color: rgb(0, 0, 167);
+      }
+        .row1,.row2{
+            margin:10px;
+            font-family: cursive;
+            text-decoration: underline;
+            
+        }
+
+        #btnmore1,#btnmore2{
+            background-color: aquamarine;
+            margin:30px;
+            font-size: large;
+        }
+
+        #innerrow1,#innerrow2{
+            display: none;
+            
+            margin-top: 10px;
+        }
+
+        #loginbtn{
+          margin-left: 4px;
+        }
+
+        button a{
+          
+          text-decoration: none;
+          color: rgb(88, 87, 84);
+        }
+
+        button a:hover{
+          color: white;
+        }
+
+        #subscribe{
+          margin-left: 4px;
+        }
+
+        #volhigh{
+          text-align: center;
+        }
+
+        #fortxt{
+          font-family: 'Send Flowers', cursive;
+          color: yellow;
+        }
+
+        
+          li a:hover{
+            background-color: black;
+            border-radius: 15px;
+          }
+       #navbar{
+        background-color: blue;
+       }
+
+       #fortxt1{
+        color: yellow;
+        font-family: 'Fondamento', cursive;
+       }
+       
+
+        
+
+        #btn-batsmen,#btn-bowler,#btn-wk,#btn-all{
+            background-color: rgb(0, 255, 0);
+            font-size: 100px;
+            border-radius: 20px;
+            font-family: 'Black And White Picture', sans-serif;
+            /* margin: 35px; */
+        }
+
+        #btn-bowler{
+            /* margin-left: 50px; */
+        }
+
+        #btn-wk{
+            /* margin-left: -100px; */
+        }
+
+       
+    </style>
+</head>
+<body>
+  <!-- <audio autoplay src="/kids_stranger.mp3" type="audio/mpeg"/></audio> -->
+
+  <div class="container-outer">
+    <nav class="navbar navbar-expand-lg " id="navbar">
+      <div class="container-fluid">
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/index.html" id="fortxt1">Disney+ Hotstar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/movies.html" id="fortxt1">Movies</a>
+            </li>
+           
+            <li class="nav-item">
+              <a class="nav-link " href="/series.html" id="fortxt1">Series</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="/cricket.html" id="fortxt1">Cricket</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="/Players.html" id="fortxt1"><b>Cricketers</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="/kids.html" id="fortxt1">Kids</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " href="/contactus.html" id="fortxt1">Contact Us</a>
+            </li>
+            
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success bg-dark" type="submit">Search</button>
+          </form>
+          <form class="d-flex" role="login">
+              
+              <button class=" btn btn-outline-success bg-dark" type="submit" id="loginbtn"><a href="/login.html">Login</a></button>
+            </form>
+          <form class="d-flex" role="Sign Up">
+              
+              <button class="btn btn-outline-success bg-dark" type="submit" id="subscribe"><a href="/subscribe.html">Subscribe</a> </button>
+            </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="alert alert-primary alert-dismissible fade show" role="alert" id="volhigh">
+      <strong>Turn up the volume  &#128521!</strong> 
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <div class="album py-5 bg-light">
+        <div class="container">
+    
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+                
+                <img src="/dhoni.jpg" alt="" width="100%" height="325px" class="bd-placeholder-img card-img-top">
+
+                <div class="card-body">
+                  <p class="card-text"><strong>Mahendra Singh Dhoni</strong><br><br><b>Jersey No.-7</b></p>The game changer behind the stumps<b>Indian Wicketkeeper</b></p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                        <a href="https://en.wikipedia.org/wiki/MS Dhoni" target="_blank">Know More...</a>
+                      
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                
+                <img src="/rp.jpg" alt="" width="100%" height="325px" class="bd-placeholder-img card-img-top">
+
+                <div class="card-body">
+                  <p class="card-text"><strong>Risabh Pant</strong><br><br><b>Jersey No.-17</b><br>The Funny Guy<br><b>Indian WK</b> <br><br></p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                        <a href="https://en.wikipedia.org/wiki/Rishabh Pant" target="_blank">Know More...</a>
+                      
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                
+                <img src="/abd1.jpg" alt="" width="100%" height="325px" class="bd-placeholder-img card-img-top">
+
+                <div class="card-body">
+                  <p class="card-text" ><strong>AB Devillers</strong > Mr 360<br><br><b>Jersey No.-17</b></p><br><b>Ex-South African WK</b> </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      
+                      <a href="https://en.wikipedia.org/wiki/AB De Villiers" target="_blank">Know More...</a>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                
+                <img src="/rizwan.jpg" alt="" width="100%" height="350px" class="bd-placeholder-img card-img-top">
+
+                <div class="card-body">
+                  <p class="card-text" ><strong>Mohammad Rizwan</strong > <br> <br><b>Jersey No.- <br>Pakistan WK</b></p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      
+                      <a href="https://en.wikipedia.org/wiki/Mohammad Rizwan(crickter)" target="_blank">Know More...</a>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            
+            <div class="col">
+                <div class="card shadow-sm">
+                  
+                  <img src="/piane.jpg" alt="" width="100%" height="350px" class="bd-placeholder-img card-img-top">
+  
+                  <div class="card-body">
+                    <p class="card-text" ><strong>Tim Paine</strong > <br> <br><b>Jersey No.-36 <br>Australia's Tempo Test Capt</b></p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        
+                        <a href="https://en.wikipedia.org/wiki/Tim Paine" target="_blank">Know More...</a>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  
+                  <img src="/pooran.jpg" alt="" width="100%" height="350px" class="bd-placeholder-img card-img-top">
+  
+                  <div class="card-body">
+                    <p class="card-text" ><strong>Nicolas Pooran</strong > <br> <br><b>Jersey No.-29<br>West Indies WK</b></p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        
+                        <a href="https://en.wikipedia.org/wiki/Nicolas Pooran" target="_blank">Know More...</a>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col">
+                <div class="card shadow-sm">
+                  
+                  <img src="/jos.jpg" alt="" width="100%" height="350px" class="bd-placeholder-img card-img-top">
+  
+                  <div class="card-body">
+                    <p class="card-text" ><strong>Jos Buttler</strong > <br> <br><b>Jersey No.-63 <br>England WK</b></p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        
+                        <a href="https://en.wikipedia.org/wiki/Jos Buttler" target="_blank">Know More...</a>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  
+                  <img src="/dk.jpg" alt="" width="100%" height="350px" class="bd-placeholder-img card-img-top">
+  
+                  <div class="card-body">
+                    <p class="card-text" ><strong>Dinesh Kartik</strong > <br> <br><b>Jersey No.-19 <br>Indian WK</b></p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        
+                        <a href="https://en.wikipedia.org/wiki/Dinesh Karthik" target="_blank">Know More...</a>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  
+                  <img src="/quinny.jpg" alt="" width="100%" height="350px" class="bd-placeholder-img card-img-top">
+  
+                  <div class="card-body">
+                    <p class="card-text" ><strong>Quinton de Kock</strong > <br> <br><b>Jersey No.-12 <br>South-African WK</b></p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        
+                        <a href="https://en.wikipedia.org/wiki/Quinton de Kock" target="_blank">Know More...</a>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <nav aria-label="Page navigation example" id="pagenav">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+      </div>
+
+      
+
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+          </a>
+          <span class="mb-3 mb-md-0 text-muted"><b>© Smaran Satapathy</b></span>
+        </div>
+    
+        
+      </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    </body>
+    </html>
+
